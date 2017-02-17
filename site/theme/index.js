@@ -5,7 +5,6 @@ let routes = [
     path: '/',
     component: './template/Home',
     name: '首页',
-    // icon: 'home'
   },
   {
     path: '/components',

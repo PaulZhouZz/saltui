@@ -115,7 +115,7 @@ export default class Demo extends React.Component {
 		const host = isLocalMode ? 'localhost:8004' : window.location.host;
 		const demoUrl = isLocalMode 
 			? `${protocol}//${host}/demos/${params}/${selectDemo.name}/` 
-			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}/`;
+			: `${protocol}//${host}/mobile/demos/${params}/${selectDemo.name}`;
 			
 		return (
 			<div className="demo-wrapper">

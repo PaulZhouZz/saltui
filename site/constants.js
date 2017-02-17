@@ -36,6 +36,6 @@ export const mapping = {
   'tab': '标签页',
   'text-field': '单行文本框',
   'textarea-field': '多行文本框',
-  'toast': 'Toast',
+  'toast': '轻提示',
   'ui': '组件合集',
 }

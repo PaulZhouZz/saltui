@@ -16,7 +16,7 @@ module.exports = Object.assign({}, commonConfig, {
   },
   pick: {
     trans(markdownData) {
-      console.log(markdownData.meta)
+      // console.log(markdownData.meta)
       return {
         meta: markdownData.meta,
         // description: markdownData.description,
