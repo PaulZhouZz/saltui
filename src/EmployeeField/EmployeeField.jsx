@@ -98,9 +98,10 @@ class EmployeeField extends React.Component {
     } else if (window.dd) {
       // fall back to dd api
       const t = this;
-      window.dd.biz.contact.choose({
+      window.dd.biz.contact.complexPicker({
         ...option,
         onSuccess(results) {
+        console.log('complexpicker success');
           /* eslint-disable no-param-reassign */
           for (let i = 0; i < results.length; i++) {
             results[i].phoneNumber = results[i].mobilePhone;
@@ -112,6 +113,7 @@ class EmployeeField extends React.Component {
           /* eslint-enable no-param-reassign */
         },
         onFail(err) {
+          console.log('complexpicker failed')
           window.dd.device.notification.alert({
             message: err.message,
             buttonName: i18n.ok,
