@@ -25,6 +25,5 @@ spm_modules
 .cache
 .vscode
 dist
-/build
 /dev/index.jsx
 package-lock.json 
